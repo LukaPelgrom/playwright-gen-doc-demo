@@ -10,5 +10,6 @@ This is a demo project on how to do PDF generation in NodeJS using:
 
 # How to start
 ```
+npm i
 npm run start
 ```
