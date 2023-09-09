@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "playwright": "^1.37.1",
+    "puppeteer": "^21.1.1",
     "typed-html": "^3.0.1"
   },
   "devDependencies": {

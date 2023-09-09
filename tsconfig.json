@@ -1,11 +1,9 @@
 {
     "compilerOptions": {
       "lib": ["ESNext"],
-      "module": "CommonJS",
+      "module": "esnext",
       "target": "esnext",
       "esModuleInterop": true,
-      "moduleDetection": "force",
-      "allowImportingTsExtensions": true,
       "strict": true,
       "downlevelIteration": true,
       "skipLibCheck": true,
@@ -14,7 +12,10 @@
       "allowSyntheticDefaultImports": true,
       "forceConsistentCasingInFileNames": true,
       "allowJs": true,
-      "noEmit": true,
       "types": ["bun-types"],
+      "moduleResolution": "bundler",
+      "noEmit": true,
+      "allowImportingTsExtensions": true,
+      "moduleDetection": "force",
     }
   }
