@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "pretest": "tsc --incremental -p tests/tsconfig.json",
+    "test": "playwright test -c tests/tests-out",
+    "test:u": "playwright test -u -c tests/tests-out"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.1.0",
+    "hono": "^3.5.8",
+    "playwright": "^1.37.1"
+  },
+  "devDependencies": {
+    "tsx": "^3.12.2",
+    "@playwright/test": "^1.37.1",
+    "@faker-js/faker": "^8.0.2",
+    "typescript": "^5.2.2"
+  }
+}
