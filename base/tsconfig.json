@@ -9,6 +9,7 @@
       "skipLibCheck": true,
       "jsx": "react",
       "jsxFactory": "elements.createElement",
+      // "jsxFactory": "elements.createElement",
       "allowSyntheticDefaultImports": true,
       "forceConsistentCasingInFileNames": true,
       "allowJs": true,

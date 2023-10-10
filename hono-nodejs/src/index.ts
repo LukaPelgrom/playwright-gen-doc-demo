@@ -9,7 +9,6 @@ import { handle } from '@hono/node-server/vercel'
 const app = new Hono()
 
 app.get('/', (c) => c.json(generateFakeData(100)))
-console.log(typeof Content({ siteData: { description: "description", title: "test" }, name: "Luka" }).toString())
 
 app.get('/test', async (c) => {
     console.time('Execution Time');
@@ -28,13 +27,14 @@ app.get('/test', async (c) => {
 });
 
 
-// serve({
-//     fetch: app.fetch,
-//     port: 3001,
-// }, (info) => {
-//     console.log(`Listening on http://localhost:${info.port}`) // Listening on http://localhost:3000
-// })
+serve({
+    fetch: app.fetch,
+    port: 3001,
+}, (info) => {
+    console.log(`Listening on http://localhost:${info.port}`) // Listening on http://localhost:3000
+})
 
-export default handle(app)
+// export default app
+
 
 
